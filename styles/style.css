@@ -21,7 +21,7 @@
   padding-top: 130px;
   padding-bottom: 130px;
   outline: 2px solid var(--main-text-color);
-  font-family: var(--accent-font), system-ui;
+  font-family: var(--accent-font), fantasy;
   text-align: center;
   text-transform: uppercase;
   background-color: var(--background-color);
@@ -68,7 +68,7 @@
   right: 25px;
   z-index: 2;
   opacity: 50%;
-  font-family: var(--accent-font), system-ui;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-transform: uppercase;
   text-shadow:
@@ -146,6 +146,7 @@
   padding: 0px;
   background-color: transparent;
   transition: border 0.3s ease;
+  display: grid;
 }
 
 .card__icon-button:focus {
@@ -158,6 +159,10 @@
 
 .card__icon-button:hover {
   cursor: pointer;
+}
+
+.like-icon {
+  height: 34px;
 }
 
 .like-icon .heart {
@@ -235,7 +240,7 @@
 .block-button {
   position: relative;
   border: 2px solid var(--main-text-color);
-  font-family: var(--accent-font), system-ui;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 90%;
   background-color: var(--background-color);
@@ -305,7 +310,7 @@ dialog:is([open]) {
   gap: 30px;
   max-width: 353px;
   padding: 30px;
-  font-family: var(--accent-font), system-ui;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -330,6 +335,7 @@ dialog::backdrop {
 
 .dialog__button {
   padding: 9px 17px;
+  text-transform: uppercase;
 }
 
 @media (width <=375px) {
